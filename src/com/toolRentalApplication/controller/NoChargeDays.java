@@ -4,6 +4,18 @@ import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 
+/**
+* An ENUM to hold all of the No Charge Day Options
+* Each item has a method to calculate the updated number of days a customer should be charged.
+* 
+* Calculate Charge Days Method takes the following parameters:
+* rentalDayCount - the number of days a customer wants to rent the tool
+* startDate - the start date for the rental
+* currentChargeDays - the number of days that a customer can currently be charged for
+* 
+* @author Karen Pelletier
+* @version 1.0
+*/
 public enum NoChargeDays {
 	SATURDAY {
 		public int calculateChargeDays(int rentalDayCount, LocalDate startDate, int currentChargeDays){

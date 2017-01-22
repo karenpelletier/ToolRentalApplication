@@ -5,6 +5,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+* An ENUM to hold all of the ToolType Options
+* Each item has methods to get the charge, the days that this type of rental should not be charged for and the name.
+* 
+* @author Karen Pelletier
+* @version 1.0
+*/
 public enum ToolType {
 	LADDER {
 		public BigDecimal charge(){return new BigDecimal(1.99);}

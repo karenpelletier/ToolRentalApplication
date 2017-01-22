@@ -10,7 +10,13 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-
+/**
+* Handler that is responsible for running the checkout method. 
+* 
+* @author Karen Pelletier
+* @version 1.0
+*
+*/
 public class CheckoutHandler {
 	public List<Tool> toolList;
 	public DateTimeFormatter dateTimeFormatter;
@@ -29,7 +35,18 @@ public class CheckoutHandler {
 		
 		this.dateTimeFormatter =DateTimeFormatter.ofPattern("MM/dd/yy");		
 	}
-
+	
+	/**
+	* Method to process a checkout. 
+	* 
+	* @param toolCode A string that corresponds to a tool that is on file
+	* @param rentalDayCount The number of days a customer wants to rent a tool for
+	* @param discountPercent The percent a customer may be discounted
+	* @param checkoutDate The day the customer checked out the tool they are renting
+	* 
+	* @return RentalAgreement An agreement that has the cost/days charged and all tool information	* 
+	*
+	*/
 	public RentalAgreement checkout(String toolCode, int rentalDayCount, int discountPercent, LocalDate checkoutDate) throws RentalAgreementException
 	{
 		// check for exceptions

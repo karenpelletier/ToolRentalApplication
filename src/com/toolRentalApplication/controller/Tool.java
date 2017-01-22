@@ -1,5 +1,12 @@
 package com.toolRentalApplication.controller;
 
+/**
+* A class representing a Tool* 
+* 
+* @author Karen Pelletier
+* @version 1.0
+*
+*/
 public class Tool {
 	public String code;
 	public String brand;

@@ -1,5 +1,12 @@
 package com.toolRentalApplication.controller;
 
+/**
+* A class representing a customers Rental Agreement 
+* 
+* @author Karen Pelletier
+* @version 1.0
+*
+*/
 public class RentalAgreement {
 	public String toolCode;
 	public String toolType;
