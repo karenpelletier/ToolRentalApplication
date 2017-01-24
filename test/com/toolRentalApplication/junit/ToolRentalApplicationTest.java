@@ -3,20 +3,22 @@ package com.toolRentalApplication.junit;
 import static org.junit.Assert.*;
 
 import java.time.LocalDate;
+
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
 import com.toolRentalApplication.controller.CheckoutHandler;
+import com.toolRentalApplication.controller.ICheckoutHandler;
 import com.toolRentalApplication.controller.RentalAgreement;
 import com.toolRentalApplication.controller.RentalAgreementException;
 
 public class ToolRentalApplicationTest {
 	
-	private CheckoutHandler checkoutHandler = new CheckoutHandler();
+	private ICheckoutHandler checkoutHandler = new CheckoutHandler(); 
 	
 	@Rule
-	public ExpectedException thrown = ExpectedException.none();
+	public ExpectedException thrown = ExpectedException.none();	
 	
 	@Test
 	public void testCase1() throws RentalAgreementException

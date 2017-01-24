@@ -17,7 +17,7 @@ import java.util.Objects;
 * @version 1.0
 *
 */
-public class CheckoutHandler {
+public class CheckoutHandler implements ICheckoutHandler {
 	public List<Tool> toolList;
 	public DateTimeFormatter dateTimeFormatter;
 	
